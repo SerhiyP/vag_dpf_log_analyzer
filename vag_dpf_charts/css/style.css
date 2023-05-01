@@ -1,0 +1,52 @@
+﻿body{
+font: 13px Verdana;
+margin:20px auto;
+width:900px;
+}
+
+#header{
+height:63px;
+outline:0px solid #cccccc;
+background-image: url(../images/vag_logo_63.jpg), url(../images/dpf_63.jpg), url(../images/range_pkw_63.png);
+background-repeat: no-repeat, no-repeat, no-repeat;
+background-position: left center, 40% center ,right center;
+margin: 5px 0;
+}
+
+#footer{
+margin-top: 20px;
+margin-bottom: 20px;
+clear:both;
+}
+
+hr{
+height:5px;
+background-color:#E21D24;
+border: 0;
+margin: 0;
+}
+
+
+#menu{
+padding: 0px 10px 1px 10px;
+}
+.punktMenu{
+background-color:#ffffff;
+color:#E21D24;
+font: 11px Verdana;
+font-weight:bold;
+border-right:2px solid #CCCCCC;
+border-left:2px solid #CCCCCC;
+margin-right: 20px;
+padding: 0px 3px;
+text-decoration: none;
+}
+.punktMenu:hover{
+background-color:#E21D24;
+color:#ffffff;
+border-right:2px solid #E21D24;
+border-left:2px solid #E21D24;
+}
+
+
+

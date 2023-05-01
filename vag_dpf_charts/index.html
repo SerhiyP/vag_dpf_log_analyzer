@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="css/vagDPF.css" type="text/css" rel="stylesheet"/>
+
+    <script src="script/control.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/highcharts.js"></script>
+
+    <title>Анализ log-файла приложения VAG DPF</title>
+</head>
+
+<body>
+<div id="previewChart">
+    <div class="closePreviewChart closePreviewChartPrime">ЗАКРЫТЬ</div>
+    <div class="closePreviewChart">ЗАКРЫТЬ</div>
+</div>
+
+<hr>
+
+<div id="header"></div>
+
+<hr>
+
+<div id="menu">
+    <a class="punktMenu" href="../index.html">Главная</a>
+</div>
+
+<hr>
+
+<div id="content">
+    <h1 id="title">Анализ log-файла приложения VAG DPF</h1>
+
+    <div id="forma">
+        <fieldset>
+            <legend>Выбор log-файла для анализа</legend>
+            <input id="inputFile" type="file" onchange="changeInputFile();">
+        </fieldset>
+
+        <fieldset hidden id="infoFile">
+            <legend>Информация о log-файле: <span id='file_name'></span></legend>
+            <p id='ver_VAG_DPF'></p>
+            <p id='log_save_date'></p>
+            <p id='log_time_ms'></p>
+            <p id='log_distance_driven'></p>
+            <p id='log_oil_ash'></p>
+            <p id='log_last_soot_mass_calc'></p>
+            <p id='filter_loading_with_soot'></p>
+
+            <p>
+                Показать данные из файла в виде таблицы
+                <input id="butTableView_On" onclick="butTableView_On();" type="button" value="ON" />
+                <input id="butTableView_Off" onclick="butTableView_Off();" type="button" value="OFF" />
+            </p>
+        </fieldset>
+
+        <fieldset hidden id="optionsGraf">
+            <legend>Настройки графиков</legend>
+            <div id="optionsGrafTable"></div>
+        </fieldset>
+
+    </div>
+</div>
+
+<div id="footer">
+    <hr>
+
+    <div hidden id='result_table'>
+        <center>
+            <br>
+            <b>ТАБЛИЦА ДАННЫХ ФАЙЛА</b>
+            <br><br>
+            <table id='data_table' bgcolor='#E8E8E8' border='1' style='border-collapse:collapse;'>
+            </table>
+            <br>
+        </center>
+        <a href='#' id='up'>НАВЕРХ</a><br>
+    </div>
+
+    <div hidden id="result_graf_1">
+        <div class='chart' id='container1' style='width:100%; height:300px;'></div>
+        <br>
+    </div>
+
+    <div hidden id="result_graf_2">
+        <div class='chart' id='container2' style='width:100%; height:300px;'></div>
+        <br>
+    </div>
+
+    <div hidden id="result_graf_3">
+        <div class='chart' id='container3' style='width:100%; height:300px;'></div>
+        <br>
+    </div>
+
+    <hr>
+</div>
+
+
+</body>
+</html>
