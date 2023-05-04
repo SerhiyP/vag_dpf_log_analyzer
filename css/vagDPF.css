@@ -1,0 +1,151 @@
+#content {
+    width: 900px;
+    outline: 0px solid #cccccc;
+    font: 11px Verdana;
+}
+
+#title {
+    text-align: center;
+    color: #BA1C22;
+    font-weight: bold;
+}
+
+
+#forma {
+    width: 900px;
+    outline: 0px solid #cccccc;
+    float: left;
+}
+
+fieldset {
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    background-color: #fcfcfc;
+    padding: 8px;
+}
+
+
+legend {
+    font-weight: bold;
+}
+
+
+#divRulon {
+    outline: 0px solid #cccccc;
+    float: left;
+}
+
+.inputRulon {
+    border: 1px solid #cccccc;
+    width: 31px;
+}
+
+.inputRulon:focus {
+    border: 1px solid #FF0000;
+    background-color: #F6D8CE;
+}
+
+#dopDivRulon {
+    outline: 0px solid #cccccc;
+    margin-left: 39px;
+    width: 386px;
+}
+
+#temp {
+    clear: both;
+    height: 10px;
+}
+
+#buttonDopDivRulon {
+    font: 10px Verdana;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.text {
+    outline: 0px solid #cccccc;
+    margin-top: 6px;
+    float: left;
+}
+
+.value {
+    outline: 0px solid #cccccc;
+    margin-left: 255px;
+}
+
+.parametrs {
+    outline: 0px solid #cccccc;
+    vertical-align: 5px;
+}
+
+.img_i {
+    height: 15px;
+    width: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#input-id, #par1 {
+/ / display: none;
+}
+
+#myProgressbar {
+    width: 414px;
+    margin: 6px auto;
+    border: 1px solid #cccccc;
+    height: 28px;
+    padding: 0px;
+}
+
+#inProgressbar {
+    outline: 0px solid #E21D24;
+    height: 28px;
+    width: 0px;
+    background-color: #E21D24;
+}
+
+
+#previewChart {
+    /* border: 1px solid red; */
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    width: 890px; /* Ширина блока */
+    padding: 5px; /* Поля вокруг текста */
+    background: #fff; /* Цвет фона */
+    display: none;
+    box-shadow: 0 0 15px gray;
+}
+
+
+.closePreviewChart {
+    border: 1px solid gray;
+    padding: 5px;
+    width: 65px;
+    cursor: pointer;
+    box-shadow: 0 0 5px gray;
+}
+
+.closePreviewChart:hover {
+    border: 1px solid red;
+    color: red;
+}
+
+.chart {
+    height: 180px;
+    width: 100%;
+}
+
+
+/*Убираем стрелки с полей типа number*/
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
