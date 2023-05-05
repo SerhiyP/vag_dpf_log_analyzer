@@ -53,7 +53,7 @@ function parseContent(content) {
       return
     }
 
-    if (tempArrayStrings[length -2] === '') {
+    if ([tempArrayStrings[length -2], tempArrayStrings[6], tempArrayStrings[9]].includes('')) {
       return
     }
 
@@ -282,10 +282,6 @@ function drawChartType5(arrX, arrY, lableX, lableY, lableGraf, chartContainer) {
     colors: ['#4F81BC', '#60B060'],
     chart: {
       zoomType: 'x',
-      //borderWidth: 1,
-      //borderRadius: 10,
-      //backgroundColor: "#AFFFFF",
-      //marginBottom: 40
     },
     title: {
       text: lableGraf,
@@ -300,7 +296,7 @@ function drawChartType5(arrX, arrY, lableX, lableY, lableGraf, chartContainer) {
       valueDecimals: 2
     },
     xAxis: {
-      type: 'linear',
+      type: lableX === 'Time (ms)' ? 'datetime': 'linear',
       title: {
         text: lableX
       }
